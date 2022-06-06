@@ -1,6 +1,5 @@
 package Problem1;
 
-import java.util.Scanner;
 import java.util.regex.*;
 public class Main {
 	
@@ -27,9 +26,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		
-		Scanner sc = new Scanner(System.in);
-		
 		String para = "Java is a high-level, class-based, object-oriented programming language that is designed to have\r\n"
 				+ "\r\n"
 				+ "as few implementation dependencies as possible. It is a general-purpose programming language\r\n"
@@ -44,13 +40,7 @@ public class Main {
 				+ "with a reported 9 million developers.";
 		
 		
-            Main.checker(para);
-            
-            System.out.println("enter string to check count java in it");
-            String input = sc.nextLine();
-            
-            Main.checker(input);
-            
+
 	}
 
 }

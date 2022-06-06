@@ -10,14 +10,14 @@ public class Demo {
 		
 		boolean checkUser = Pattern.matches("[a-zA-z]{3,8}",user);
 		
-		boolean checkPass =Pattern.matches("[a-zA-Z]", pass) && Pattern.matches("[a-zA-Z0-9]{3,8}", pass) &&  Pattern.matches("[0-9]", pass);
+		boolean checkPass =Pattern.matches("[a-zA-Z]+", pass) && Pattern.matches("[a-zA-z0-9]{3,8}", pass) && Pattern.matches("[0-9]+", pass);
 		
 		boolean checkMob = Pattern.matches("[6-9][0-9]{9}", mob);
 		
-		boolean checkEmail = Pattern.matches("[@]", email) && Pattern.matches("[.]", email); // @ .
+		boolean checkEmail = Pattern.matches("\\W{2}", email); // @ .
 		
 		if(checkEmail && checkMob && checkPass  && checkUser) {
-			return new Customer(user,pass,mob,email);
+			return new Customer();
 		}
 		else {
 			
@@ -53,8 +53,6 @@ public class Demo {
 		
      Scanner sc = new Scanner(System.in);
      
-     System.out.println( Pattern.matches("[6-9][0-9]{9}", "8962740260"));
-     
      System.out.println("enter username");
      String username = sc.next();
      
@@ -64,7 +62,7 @@ public class Demo {
      System.out.println("enter mobile");
      String mobile = sc.next();
      
-     System.out.println("enter email");
+     System.out.println("enter username");
      String email = sc.next();
      
      Customer c = Demo.validater(username, password, mobile, email);
@@ -77,8 +75,6 @@ public class Demo {
     	 c.getMobilNumber();
     	 c.getPassword();
      }
-     
-   
     
      
 	}

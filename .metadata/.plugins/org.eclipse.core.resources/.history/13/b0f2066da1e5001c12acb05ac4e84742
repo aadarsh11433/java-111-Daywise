@@ -38,17 +38,6 @@ import java.util.Scanner;
 			 System.out.println("Please enter valid number");
 			 System.out.println(e);
 		}
-		 catch (ArithmeticException e) {
-			 System.out.println("num2 should not be 0");
-			 System.out.println(e);
-		}
-		 catch (NullPointerException e) {
-			 System.out.println("String value is null");
-			 System.out.println(e);
-		}
-		 catch (Exception e) {
-	         System.out.println(e);
-		}
 		 
 		 
 
