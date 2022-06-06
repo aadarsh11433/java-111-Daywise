@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Demo {
 	
-	static void showDetails(Month m) {
+	void showDetails(Month m) {
 		
 	}
 
@@ -14,8 +14,6 @@ public class Demo {
 		System.out.println("Enter the name of month");
 		
 		String month = sc.next();
-		
-		Demo.showDetails(month);
 
 	}
 
