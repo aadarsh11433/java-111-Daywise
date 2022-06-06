@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Problem3.Enum&apos; to &apos;Month&apos;&#x0D;&#x0A;- Original project: &apos;june06 Eval 03&apos;&#x0D;&#x0A;- Original element: &apos;Problem3.Enum&apos;&#x0D;&#x0A;- Renamed element: &apos;Problem3.Month&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Enum&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Problem3{Enum.java[Enum" matchStrategy="1" name="Month" qualified="false" references="true" similarDeclarations="false" stamp="1654505545349" textual="false" version="1.0"/>
+</session>

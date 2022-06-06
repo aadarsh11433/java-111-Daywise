@@ -1,0 +1,18 @@
+package Problem2;
+
+public class Main {
+
+	
+	
+	public static void main(String[] args) {
+		
+		Loan l1 = getLoan();
+
+	}
+
+	private static Loan getLoan() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

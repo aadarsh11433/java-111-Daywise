@@ -1,0 +1,40 @@
+package Notes;
+
+
+
+public class Main{
+
+	public static void main(String args[]){
+
+		//code that may raise exception
+
+		try {
+			
+			int data=100/0;
+
+			System.out.println(data);
+
+			
+		}catch(ArithmeticException e){
+			System.out.println(e.getMessage());
+		}
+		
+		try {
+			String s=null;
+//			System.out.println(s.length());//NullPointerException
+
+			Main ob = null;
+			ob++;
+			
+		}
+	    catch(NullPointerException ec) {
+	    	System.out.println(ec);
+	    }
+
+	
+
+		System.out.println("rest of the code...");
+
+	}
+
+}

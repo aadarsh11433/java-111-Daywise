@@ -1,0 +1,18 @@
+package Notes;
+
+import java.util.regex.Pattern;
+
+import java.util.regex.Matcher;
+
+public class PatternNMatchers {
+
+	public static void main(String[] args) {
+
+		Pattern p=Pattern.compile("ab");
+		
+		Matcher m=p.matcher("abbbabbaba");
+
+		System.out.println(m.end());
+	}
+
+}

@@ -1,0 +1,22 @@
+package Problem2;
+
+public class PermanentEmployee extends Employee{
+
+	
+
+	public PermanentEmployee(double basicPay,int  id ,String name) {
+		super(id,name);
+		this.basicPay = basicPay;
+	}
+
+	private double basicPay;
+
+	@Override
+	void calculateSalary() {
+		// TODO Auto-generated method stub
+		
+	} 
+	
+	
+	 
+}

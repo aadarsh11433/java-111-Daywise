@@ -1,0 +1,31 @@
+package Notes;
+
+import java.util.regex.Pattern;
+
+import java.util.regex.Matcher;
+
+public class PatternNMatchers {
+
+	public static void main(String[] args) {
+
+		Pattern p=Pattern.compile("[^a-z]");
+		
+		Matcher m=p.matcher("asD3#");
+		
+		int count =0;
+//		if(m.find())
+//		System.out.println(m.start());
+//		
+//		System.out.println(m.group()+"ab");
+		
+		while (m.find()) {
+			count++;
+			System.out.println(m.start() + "------" + m.end() + "------" + m.group());
+			}
+			System.out.println("The no of occurences:" + count);
+
+			
+			
+	}
+
+}

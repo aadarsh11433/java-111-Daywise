@@ -1,0 +1,56 @@
+package Notes;
+
+
+
+public class Main{
+	
+	void method1() {
+		
+		System.out.println("inside mehod1"
+				
+				+"line change");
+	}
+
+	public static void main(String args[]){
+
+		//code that may raise exception
+
+		try {
+			
+			int data=100/0;
+
+			System.out.println(data);
+
+			
+		}catch(ArithmeticException e){
+			System.out.println(e.getMessage());
+		}
+		
+		try {
+			String s=null;
+//			System.out.println(s.length());//NullPointerException
+
+			Main ob = null;
+			ob.method1();    //NullPointerException
+			
+			
+			String s2="abc";
+			int i=Integer.parseInt(s2);//NumberFormatException
+			
+		}
+	    catch(NullPointerException ec) {
+	    	System.out.println(ec);
+	    }
+		catch (NumberFormatException ec) {
+			// TODO: handle exception
+			
+			System.out.println(e);
+		}
+
+	
+
+		System.out.println("rest of the code...");
+
+	}
+
+}

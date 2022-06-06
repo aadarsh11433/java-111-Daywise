@@ -1,0 +1,28 @@
+package Notes;
+
+
+
+public class Main{
+
+	public static void main(String args[]){
+
+		//code that may raise exception
+
+		try {
+			
+			int data=100/0;
+
+			System.out.println(data);
+
+			
+		}catch(ArithmeticException e){
+			System.out.println(e.getCause());
+		}
+		
+	
+
+		System.out.println("rest of the code...");
+
+	}
+
+}

@@ -1,0 +1,42 @@
+package Notes;
+
+import java.util.regex.Pattern;
+
+import java.util.regex.Matcher;
+
+public class PatternNMatchers {
+
+	public static void main(String[] args) {
+
+		Pattern p=Pattern.compile("[^abc]");
+		
+		Matcher m=p.matcher("a7b@z#9");
+		
+		int count =0;
+//		if(m.find())
+//		System.out.println(m.start());
+//		
+//		System.out.println(m.group()+"ab");
+		
+		while (m.find()) {
+			
+			System.out.println(m.start() + "------" + m.end() + "------" + m.group());
+			}
+			System.out.println("The no of occurences:" + count);
+			
+			System.out.println("======================");
+			
+			
+			Pattern p2 = Pattern.compile("a{2,}");
+			Matcher m2 = p2.matcher("abaabaaab");
+			while (m2.find()) {
+				count++;
+				System.out.println(m2.start() + "-------" + m2.group());
+			}
+			
+			System.out.println("The no of occurences:" + count);
+			
+			
+	}
+
+}
